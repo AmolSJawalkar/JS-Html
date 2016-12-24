@@ -1,0 +1,48 @@
+html {
+
+}
+
+.clock {
+	border:20px solid white;
+	width: 30rem;
+	height: 30rem;
+	border-radius: 50%;
+	margin: 50px auto;
+	padding: 2rem;
+	background: url("http://unsplash.it/1500/1000?image=881");
+	background-size: cover;
+	box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px); /* account for the height of the clock hands */
+    }
+
+.hand {
+	width: 50%;
+	top: 50%;
+	background: black;
+	position: absolute;
+	transform-origin: right;
+}
+
+.second-hand {
+	height: 3px;
+}
+
+.minute-hand {
+
+	height: 7px;
+}
+
+.hour-hand {
+	
+	height:15px;
+}
+
