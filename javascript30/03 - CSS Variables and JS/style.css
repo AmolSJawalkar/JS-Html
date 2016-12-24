@@ -1,0 +1,32 @@
+input {
+	width: 100px;
+}
+
+body {
+      text-align: center;
+    }
+
+body {
+  background: #193549;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+:root {
+	--spacing:20px;
+	--base:#00FF00;
+	--blur:5px;
+}
+
+img {
+	padding: var(--spacing);
+	background-color: var(--base);
+	filter: blur(var(--blur));
+}
+
+.h1 {
+	color: var(--base);
+}
+

@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS variables and JS</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<h2> Update CSS variables with <span class="h1">JS</span></h2>
+		<div>
+		
+		<label>Spacing:</label>
+		<input type="range" name="spacing" min="10" max="200" value="50" data-sizing="px">
+			
+		<label>Blur:</label>
+		<input type="range" name="blur" min="0" max="25" value="25" data-sizing="px">
+			
+		<label>Base color:</label>
+		<input type="color" name="base" value="#FF0000">
+			
+		<img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">	
+		</div>
+		<script>	
+		let array = Array.from( document.querySelectorAll("input"));
+			
+			function update() {
+				const suffix = this.dataset.sizing || '';
+				document.documentElement.style.setProperty('--'+this.name, this.value + suffix);
+			}
+			
+			array.forEach(function(element){
+								
+				element.addEventListener("change", update);
+				element.addEventListener("mousemove", update);
+			});
+		
+		</script>
+		
+	</body>
+	
+</html>
