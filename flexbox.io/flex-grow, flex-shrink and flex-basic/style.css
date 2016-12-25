@@ -1,0 +1,31 @@
+/* Some default styles to make each box visible */
+.box {
+  color:white;
+  font-size: 50px;
+  text-align: center;
+  text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+  padding:10px;
+}
+
+
+/* Colours for each box */
+.box1 { background:#1abc9c;}
+.box2 { background:#3498db;}
+
+.container {
+	display: flex;
+	border: 10px solid grey;
+}
+
+.box1{
+	flex-basis: 300px;
+	flex-grow: 5;
+	flex-shrink: 5;
+}
+
+.box2 {
+	flex-basis: 300px;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
