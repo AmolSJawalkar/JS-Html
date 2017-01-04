@@ -1,0 +1,32 @@
+.calculator {
+    margin: 20px;
+    background-color: #94a93a;
+    height: 400px;
+    width: 250px !important;
+    border-radius: 10px;
+	box-shadow: 6px 5px 20px 2px #888888;
+}
+
+button {
+	height: 40px;
+	width: 40px;
+	margin: 5px !important;
+}
+
+.button-clear
+{
+	width: 150px;
+}
+
+.title {
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.display {
+    padding: 10px;
+    background-color: rgba(47, 9, 84, 0.34);
+    border-radius: 5px;
+    margin: 5px;
+}
